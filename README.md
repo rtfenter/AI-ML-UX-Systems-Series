@@ -147,6 +147,3 @@ Enough to show applied depth, without overwhelming.
 ## About This Repo  
 
 This repository is the **central hub** for all AI & ML UX Systems work — writing, diagrams, prototypes, and conceptual models designed to demonstrate intelligence-system understanding to recruiters, hiring managers, and technical peers.
-
-Clean. Legible. High-signal.  
-A recruiter can skim it in 20 seconds and understand exactly what you bring to an AI PM role.
