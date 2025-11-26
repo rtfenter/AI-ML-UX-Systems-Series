@@ -71,7 +71,7 @@ A simple sandbox for seeing how model parameters affect outputs.
 - Recruiters immediately understand its purpose
 
 **Live Demo:** _coming soon_  
-**Repo:** _coming soon_
+**Repo:** https://github.com/rtfenter/Chat-Model-Behavior-Sandbox
 
 ---
 
@@ -97,7 +97,7 @@ A visual playground for comparing how a single prompt produces multiple outputs 
 - Connects directly to model evaluation and UX design
 
 **Live Demo:** _coming soon_  
-**Repo:** _coming soon_
+**Repo:** https://github.com/rtfenter/Prompt-Response-Variation-Explorer
 
 ---
 
