@@ -1,68 +1,74 @@
-# AI & ML UX Systems Series  
-Applied AI reasoning, model behavior clarity, and ML-aligned product design
+# AI Product Systems Series  
+Practical tools for designing predictable, explainable, and user-aligned AI features
 
-This series collects my work on applied AI/ML UX systems — where model behavior, retrieval, constraints, and explainability meet practical product design.  
-It includes writing, diagrams, and small technical prototypes that make intelligence-system behavior legible without heavy infrastructure.
+This series collects my work on applied AI product design — where model behavior, retrieval, parameters, and UX meet practical decision-making.  
+It includes writing, diagrams, and lightweight prototypes that help teams understand how AI systems behave and how to design product surfaces around them.
 
-My goal is to communicate AI system behavior in a way that is simple, visual, and usable by PMs, engineers, and stakeholders — translating complex model dynamics into clear product surfaces and reasoning tools.
+My goal is to make AI behavior legible for PMs, engineers, and stakeholders — turning complex model dynamics into clear, reliable, and predictable product experiences.
 
 ---
 
-## Purpose of This Series  
+## Purpose of This Series
 
-Most AI systems fail not because models are weak, but because teams lack shared intuition about:
+Most AI failures come from misunderstanding model behavior — not weak models.
 
-- how models behave  
-- how parameters and constraints shape outputs  
-- how retrieval (RAG) determines grounding  
-- where drift, variance, and ambiguity come from  
-- how to expose model state and reasoning to users  
+This series makes core AI dynamics visible and product-friendly:
 
-This series makes those dynamics visible through small, high-signal prototypes that model:
+- how parameters affect outputs  
+- how variation should (and shouldn’t) behave  
+- how retrieval shapes grounding  
+- how ambiguity and drift emerge  
+- how to design UX around confidence, consistency, and explainability  
 
-- parameter sensitivity  
-- retrieval and context shaping  
-- semantic similarity  
-- drift and variation  
-- explainability and token importance  
-
-These are **product clarity tools**, not research demos.
+These prototypes are **product decision tools**, not research experiments.
 
 ---
 
 ## Why This Matters for Product Strategy
 
-AI features succeed when model behavior is predictable, explainable, and aligned with user intent.
+AI features succeed when behavior is predictable, explainable, and aligned with user intent.
 
-Clearer reasoning and better AI behavior modeling lead directly to:
+Clearer modeling and better product surfaces lead to:
 
-- safer, more understandable outputs  
-- better grounding and retrieval consistency  
-- clearer UX around variation and uncertainty  
-- more aligned human–AI interaction flows  
-- faster iteration loops between PM and engineering  
-- reduced ambiguity in product decisions  
+- safer, more consistent model responses  
+- clearer UX for variation and uncertainty  
+- better grounding from retrieval systems  
+- faster iteration with engineering  
+- improved trust and interpretability for users  
+- reduced ambiguity in product design and acceptance criteria  
 
-These prototypes serve as reference surfaces for designing, debugging, and communicating AI system behavior.
+These prototypes help teams reason about AI behavior early — before wiring models into complex systems.
 
 ---
 
 ## Product Architecture Philosophy
 
-AI UX sits at the intersection of reasoning, structure, and transparency.
+AI product design sits at the intersection of reasoning, UX, and system constraints.
 
-My architecture philosophy is built on three principles:
+My approach is built on three principles:
 
-### 1. Model behavior must be observable  
-Users should see how parameters, retrieval, and constraints shape outcomes — not guess.
+### 1. Model behavior must be visible  
+Users and teams should never guess how parameters, context, or retrieval are shaping outcomes.
 
-### 2. Variation should be controlled, not mysterious  
-Temperature, sampling, and grounding must map cleanly to UX so behaviors feel intentional.
+### 2. Variation should be intentional  
+Sampling, temperature, grounding, and constraints should map directly to UX expectations.
 
-### 3. Alignment emerges from clarity  
-AI systems align best when product surfaces reflect how models actually work under the hood: embeddings, context windows, token influence, and drift dynamics.
+### 3. Alignment comes from clarity  
+When product surfaces reflect how models actually behave — embeddings, retrieval, variation, token influence — alignment becomes achievable.
 
-This series expresses those principles through simple, clear, interactive tools.
+This series expresses these principles through simple, clear, interactive tools.
+
+---
+
+## Writing
+
+Essays on AI product design, explainability, retrieval, and user trust.
+
+- Designing Predictable AI Features  
+- Retrieval as Product Surface  
+- The Parameter Problem: Controlling Variation  
+- Making AI Behavior Understandable for Users  
+- Explainability Without Overload  
 
 ---
 
@@ -72,10 +78,90 @@ This series expresses those principles through simple, clear, interactive tools.
 | Prototype | Purpose | Live Demo | Repo |
 |----------|---------|-----------|------|
 | Minimal RAG Query Explorer | Embeddings → vector search → context → answer | coming soon | coming soon |
-| Chat Model Behavior Sandbox | Temperature, top-k, and controlled variation | https://rtfenter.github.io/Chat-Model-Behavior-Sandbox/ | https://github.com/rtfenter/Chat-Model-Behavior-Sandbox |
+| Chat Model Behavior Sandbox | Temperature, top-k, sampling, variation | https://rtfenter.github.io/Chat-Model-Behavior-Sandbox/ | https://github.com/rtfenter/Chat-Model-Behavior-Sandbox |
 | Model Explainer Playground (XAI Lite) | Token-level feature importance visualization | coming soon | coming soon |
 | Prompt–Response Variation Explorer | Compare multiple responses from one prompt | https://rtfenter.github.io/Prompt-Response-Variation-Explorer/ | https://github.com/rtfenter/Prompt-Response-Variation-Explorer |
-| Embeddings Visual Map (Mini Version) | 2D meaning clustering for small text sets | https://rtfenter.github.io/Embeddings-Visual-Map/ | https://github.com/rtfenter/Embeddings-Visual-Map |
+| Embeddings Visual Map (Mini Version) | 2D meaning clustering and similarity mapping | https://rtfenter.github.io/Embeddings-Visual-Map/ | https://github.com/rtfenter/Embeddings-Visual-Map |
+
+---
+
+## System Diagrams
+
+### AI Behavior Flow (Prompt → Parameters → Retrieval → Output)
+
+~~~
+            [User Prompt]
+                   |
+                   v
+           [Model Parameters]
+        - temperature
+        - top-k / top-p
+        - max tokens
+                   |
+                   v
+           [Retrieval Layer]
+        - embeddings
+        - vector search
+        - context assembly
+                   |
+                   v
+           [Model Generation]
+        - token sampling
+        - constraint shaping
+                   |
+                   v
+             [Final Output]
+~~~
+
+---
+
+### Retrieval Consistency Map
+
+~~~
+               [User Query]
+                     |
+                     v
+         [Embedding & Vector Search]
+                     |
+     ---------------------------------------
+     |                 |                   |
+     v                 v                   v
+ [Source A]       [Source B]          [Source C]
+ - updated docs   - stale content     - missing rules
+
+Result:
+- mismatched grounding
+- inconsistent answers
+- different "truths"
+- variance in outputs
+~~~
+
+---
+
+### Parameter Influence Map
+
+~~~
+       [Model Input]
+            |
+            v
+   -----------------------
+   |    Parameters       |
+   -----------------------
+   | Temperature         |
+   | Top-k / Top-p       |
+   | Max tokens          |
+   -----------------------
+            |
+            v
+     [Sampling Behavior]
+            |
+            v
+     [Output Variation]
+
+Higher temperature → more variation  
+Lower temperature → more consistency  
+Poor grounding → unpredictable drift
+~~~
 
 ---
 
@@ -89,7 +175,7 @@ This series expresses those principles through simple, clear, interactive tools.
 
 ## About This Repo
 
-This repository is the central hub for all AI & ML UX Systems work — diagrams, prototypes, and conceptual models that make model behavior, drift, retrieval, and reasoning legible through simple, interactive tools.
+This repository is the central hub for all AI Product Systems work — prototypes, diagrams, and conceptual models that make AI behavior understandable and usable for product teams.
 
 ---
 
@@ -101,4 +187,194 @@ These prototypes are intentionally lightweight:
 - GitHub Pages hosting  
 - No backend required  
 
-The goal is clarity: high-signal tools that communicate AI behavior, variation, and reasoning without infrastructure overhead.
+The goal is clarity: high-signal tools that communicate AI behavior, grounding, variation, and reasoning without infrastructure complexity.
+# AI Product Systems Series  
+Practical tools for designing predictable, explainable, and user-aligned AI features
+
+This series collects my work on applied AI product design — where model behavior, retrieval, parameters, and UX meet practical decision-making.  
+It includes writing, diagrams, and lightweight prototypes that help teams understand how AI systems behave and how to design product surfaces around them.
+
+My goal is to make AI behavior legible for PMs, engineers, and stakeholders — turning complex model dynamics into clear, reliable, and predictable product experiences.
+
+---
+
+## Purpose of This Series
+
+Most AI failures come from misunderstanding model behavior — not weak models.
+
+This series makes core AI dynamics visible and product-friendly:
+
+- how parameters affect outputs  
+- how variation should (and shouldn’t) behave  
+- how retrieval shapes grounding  
+- how ambiguity and drift emerge  
+- how to design UX around confidence, consistency, and explainability  
+
+These prototypes are **product decision tools**, not research experiments.
+
+---
+
+## Why This Matters for Product Strategy
+
+AI features succeed when behavior is predictable, explainable, and aligned with user intent.
+
+Clearer modeling and better product surfaces lead to:
+
+- safer, more consistent model responses  
+- clearer UX for variation and uncertainty  
+- better grounding from retrieval systems  
+- faster iteration with engineering  
+- improved trust and interpretability for users  
+- reduced ambiguity in product design and acceptance criteria  
+
+These prototypes help teams reason about AI behavior early — before wiring models into complex systems.
+
+---
+
+## Product Architecture Philosophy
+
+AI product design sits at the intersection of reasoning, UX, and system constraints.
+
+My approach is built on three principles:
+
+### 1. Model behavior must be visible  
+Users and teams should never guess how parameters, context, or retrieval are shaping outcomes.
+
+### 2. Variation should be intentional  
+Sampling, temperature, grounding, and constraints should map directly to UX expectations.
+
+### 3. Alignment comes from clarity  
+When product surfaces reflect how models actually behave — embeddings, retrieval, variation, token influence — alignment becomes achievable.
+
+This series expresses these principles through simple, clear, interactive tools.
+
+---
+
+## Writing
+
+Essays on AI product design, explainability, retrieval, and user trust.
+
+- Designing Predictable AI Features  
+- Retrieval as Product Surface  
+- The Parameter Problem: Controlling Variation  
+- Making AI Behavior Understandable for Users  
+- Explainability Without Overload  
+
+---
+
+## Projects  
+### Series Index
+
+| Prototype | Purpose | Live Demo | Repo |
+|----------|---------|-----------|------|
+| Minimal RAG Query Explorer | Embeddings → vector search → context → answer | coming soon | coming soon |
+| Chat Model Behavior Sandbox | Temperature, top-k, sampling, variation | https://rtfenter.github.io/Chat-Model-Behavior-Sandbox/ | https://github.com/rtfenter/Chat-Model-Behavior-Sandbox |
+| Model Explainer Playground (XAI Lite) | Token-level feature importance visualization | coming soon | coming soon |
+| Prompt–Response Variation Explorer | Compare multiple responses from one prompt | https://rtfenter.github.io/Prompt-Response-Variation-Explorer/ | https://github.com/rtfenter/Prompt-Response-Variation-Explorer |
+| Embeddings Visual Map (Mini Version) | 2D meaning clustering and similarity mapping | https://rtfenter.github.io/Embeddings-Visual-Map/ | https://github.com/rtfenter/Embeddings-Visual-Map |
+
+---
+
+## System Diagrams
+
+### AI Behavior Flow (Prompt → Parameters → Retrieval → Output)
+
+~~~
+            [User Prompt]
+                   |
+                   v
+           [Model Parameters]
+        - temperature
+        - top-k / top-p
+        - max tokens
+                   |
+                   v
+           [Retrieval Layer]
+        - embeddings
+        - vector search
+        - context assembly
+                   |
+                   v
+           [Model Generation]
+        - token sampling
+        - constraint shaping
+                   |
+                   v
+             [Final Output]
+~~~
+
+---
+
+### Retrieval Consistency Map
+
+~~~
+               [User Query]
+                     |
+                     v
+         [Embedding & Vector Search]
+                     |
+     ---------------------------------------
+     |                 |                   |
+     v                 v                   v
+ [Source A]       [Source B]          [Source C]
+ - updated docs   - stale content     - missing rules
+
+Result:
+- mismatched grounding
+- inconsistent answers
+- different "truths"
+- variance in outputs
+~~~
+
+---
+
+### Parameter Influence Map
+
+~~~
+       [Model Input]
+            |
+            v
+   -----------------------
+   |    Parameters       |
+   -----------------------
+   | Temperature         |
+   | Top-k / Top-p       |
+   | Max tokens          |
+   -----------------------
+            |
+            v
+     [Sampling Behavior]
+            |
+            v
+     [Output Variation]
+
+Higher temperature → more variation  
+Lower temperature → more consistency  
+Poor grounding → unpredictable drift
+~~~
+
+---
+
+## Portfolio & Writing
+
+- Medium: https://medium.com/@rtfenter  
+- LinkedIn: https://www.linkedin.com/in/rtfenter/  
+- GitHub: https://github.com/rtfenter  
+
+---
+
+## About This Repo
+
+This repository is the central hub for all AI Product Systems work — prototypes, diagrams, and conceptual models that make AI behavior understandable and usable for product teams.
+
+---
+
+## Technologies Used
+
+These prototypes are intentionally lightweight:
+
+- HTML / CSS / JavaScript  
+- GitHub Pages hosting  
+- No backend required  
+
+The goal is clarity: high-signal tools that communicate AI behavior, grounding, variation, and reasoning without infrastructure complexity.
