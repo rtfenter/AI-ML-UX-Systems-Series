@@ -48,7 +48,7 @@ These tools give you instant, visual answers.
 
 ---
 
-## High-Impact Prototypes (Final, Recruiter-Optimized Set)
+## Prototypes
 
 ### **1. Minimal RAG Query Explorer**  
 A tiny, visual demonstration of retrieval-augmented generation: embeddings → vector search → context retrieval → answer.
@@ -110,29 +110,6 @@ A compact embeddings visualizer that generates embeddings for 3–6 texts and cl
 
 **Live Demo:** https://rtfenter.github.io/Embeddings-Visual-Map/ 
 **Repo:** https://github.com/rtfenter/Embeddings-Visual-Map/blob/main/README.md
-
----
-
-## Why These 5 (and Not More)?
-
-Because this series is designed to be:
-
-- **recruiter-friendly**  
-- **intuitive on first glance**  
-- **aligned to modern AI PM hiring loops**  
-- **distinct from your deeper RIA, Systems of Trust, and Platform Systems work**  
-- **non-overlapping with loyalty or infrastructure tools**  
-- **easy to explain in interviews**  
-
-These prototypes form a perfectly balanced “AI PM surface area”:
-
-- one RAG tool  
-- one agent/model behavior tool  
-- one explainability tool  
-- one prompt-variation tool  
-- one embeddings tool  
-
-Enough to show applied depth, without overwhelming.
 
 ---
 
