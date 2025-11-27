@@ -108,8 +108,8 @@ A compact embeddings visualizer that generates embeddings for 3–6 texts and cl
 - Shows spatial meaning relationships  
 - A recruiter can understand it in <10 seconds
 
-**Live Demo:** _coming soon_  
-**Repo:** _coming soon_
+**Live Demo:** https://rtfenter.github.io/Embeddings-Visual-Map/ 
+**Repo:** https://github.com/rtfenter/Embeddings-Visual-Map/blob/main/README.md
 
 ---
 
