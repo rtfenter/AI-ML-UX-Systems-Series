@@ -1,119 +1,85 @@
 # AI & ML UX Systems Series  
-### Recruiter-friendly prototypes that demonstrate applied AI reasoning, model behavior, and ML-aware product design
+Applied AI reasoning, model behavior clarity, and ML-aligned product design
 
-This series showcases a focused collection of AI/ML UX prototypes designed to communicate **clear product thinking**, **model behavior understanding**, and **practical intelligence-system intuition** — without requiring heavy infrastructure.
+This series collects my work on applied AI/ML UX systems — where model behavior, retrieval, constraints, and explainability meet practical product design.  
+It includes writing, diagrams, and small technical prototypes that make intelligence-system behavior legible without heavy infrastructure.
 
-It exists to give recruiters, hiring managers, and technical peers a clean, credible view of how you design AI features, reason about models, and turn complex ML concepts into simple, understandable user experiences.
-
-These prototypes are intentionally lightweight: high-signal, easy to demo, and immediately legible to anyone hiring an **AI Product Manager**, **Platform PM**, **Applied AI PM**, or **Product Architect**.
+My goal is to communicate AI system behavior in a way that is simple, visual, and usable by PMs, engineers, and stakeholders — translating complex model dynamics into clear product surfaces and reasoning tools.
 
 ---
 
 ## Purpose of This Series  
 
-Most AI PM roles require candidates to show they understand:
+Most AI systems fail not because models are weak, but because teams lack shared intuition about:
 
 - how models behave  
-- how model inputs, constraints, and parameters shape output  
-- how retrieval works (RAG)  
-- how to design UX that reveals system behavior  
-- how to reason about safety, drift, and explainability  
+- how parameters and constraints shape outputs  
+- how retrieval (RAG) determines grounding  
+- where drift, variance, and ambiguity come from  
+- how to expose model state and reasoning to users  
 
-This series translates those expectations into **five clear prototypes** — each small enough to understand in seconds, but deep enough to demonstrate real AI product competence.
+This series makes those dynamics visible through small, high-signal prototypes that model:
 
-These are not research demos.  
-They are **product artifacts** that show how to evaluate, debug, and communicate model behavior.
+- parameter sensitivity  
+- retrieval and context shaping  
+- semantic similarity  
+- drift and variation  
+- explainability and token importance  
 
----
-
-## Why This Matters for AI PM Roles  
-
-Every AI PM interviewer looks for four signals:
-
-1. **Model intuition** — how to predict behavior before running it  
-2. **Parameter literacy** — temperature, top-k, embeddings, context windows  
-3. **UX judgment** — what users need to *understand* and *control*  
-4. **Safety mindset** — governance, constraints, and predictable behavior  
-
-This series demonstrates all four in a clean, coherent way.
-
-Each prototype doubles as a portfolio piece and as a conversation tool during interviews:
-
-- “Walk me through how this model makes decisions.”  
-- “How would you diagnose drift?”  
-- “Show me how prompt sensitivity works.”  
-- “Explain embeddings to a non-technical stakeholder.”  
-
-These tools give you instant, visual answers.
+These are **product clarity tools**, not research demos.
 
 ---
 
-## Prototypes
+## Why This Matters for Product Strategy
 
-### **1. Minimal RAG Query Explorer**  
-A tiny, visual demonstration of retrieval-augmented generation: embeddings → vector search → context retrieval → answer.
+AI features succeed when model behavior is predictable, explainable, and aligned with user intent.
 
-- Shows practical understanding of RAG (listed in most AI PM job descriptions)  
-- Demonstrates embeddings + search + context window reasoning  
-- Minimal backend required; clean UI over core concepts
+Clearer reasoning and better AI behavior modeling lead directly to:
 
-**Live Demo:** _coming soon_  
-**Repo:** _coming soon_
+- safer, more understandable outputs  
+- better grounding and retrieval consistency  
+- clearer UX around variation and uncertainty  
+- more aligned human–AI interaction flows  
+- faster iteration loops between PM and engineering  
+- reduced ambiguity in product decisions  
 
----
-
-### **2. Chat Model Behavior Sandbox**  
-A simple sandbox for seeing how model parameters affect outputs.
-
-- Temperature, top-k, and other controls  
-- Safety toggle  
-- Response variation preview  
-- Recruiters immediately understand its purpose
-
-**Live Demo:** https://rtfenter.github.io/Chat-Model-Behavior-Sandbox/  
-**Repo:** https://github.com/rtfenter/Chat-Model-Behavior-Sandbox
+These prototypes serve as reference surfaces for designing, debugging, and communicating AI system behavior.
 
 ---
 
-### **3. Model Explainer Playground (XAI Lite)**  
-A small explainability demo showing how input features/tokens influence model output.
+## Product Architecture Philosophy
 
-- User enters text  
-- System visualizes token importance  
-- Lightweight XAI that feels advanced but is easy to grasp  
-- Perfect interview reference
+AI UX sits at the intersection of reasoning, structure, and transparency.
 
-**Live Demo:** _coming soon_  
-**Repo:** _coming soon_
+My architecture philosophy is built on three principles:
 
----
+### 1. Model behavior must be observable  
+Users should see how parameters, retrieval, and constraints shape outcomes — not guess.
 
-### **4. Prompt–Response Variation Explorer**  
-A visual playground for comparing how a single prompt produces multiple outputs under different conditions.
+### 2. Variation should be controlled, not mysterious  
+Temperature, sampling, and grounding must map cleanly to UX so behaviors feel intentional.
 
-- Variation across temperature  
-- Side-by-side comparison  
-- Shows prompt engineering intuition  
-- Connects directly to model evaluation and UX design
+### 3. Alignment emerges from clarity  
+AI systems align best when product surfaces reflect how models actually work under the hood: embeddings, context windows, token influence, and drift dynamics.
 
-**Demo:** https://rtfenter.github.io/Prompt-Response-Variation-Explorer/  
-**Repo:** https://github.com/rtfenter/Prompt-Response-Variation-Explorer
+This series expresses those principles through simple, clear, interactive tools.
 
 ---
 
-### **5. Embeddings Visual Map (Mini Version)**  
-A compact embeddings visualizer that generates embeddings for 3–6 texts and clusters them in 2D.
+## Projects  
+### Series Index
 
-- Looks like Pinecone / Weaviate docs  
-- Shows spatial meaning relationships  
-- A recruiter can understand it in <10 seconds
-
-**Live Demo:** https://rtfenter.github.io/Embeddings-Visual-Map/ 
-**Repo:** https://github.com/rtfenter/Embeddings-Visual-Map/blob/main/README.md
+| Prototype | Purpose | Live Demo | Repo |
+|----------|---------|-----------|------|
+| Minimal RAG Query Explorer | Embeddings → vector search → context → answer | coming soon | coming soon |
+| Chat Model Behavior Sandbox | Temperature, top-k, and controlled variation | https://rtfenter.github.io/Chat-Model-Behavior-Sandbox/ | https://github.com/rtfenter/Chat-Model-Behavior-Sandbox |
+| Model Explainer Playground (XAI Lite) | Token-level feature importance visualization | coming soon | coming soon |
+| Prompt–Response Variation Explorer | Compare multiple responses from one prompt | https://rtfenter.github.io/Prompt-Response-Variation-Explorer/ | https://github.com/rtfenter/Prompt-Response-Variation-Explorer |
+| Embeddings Visual Map (Mini Version) | 2D meaning clustering for small text sets | https://rtfenter.github.io/Embeddings-Visual-Map/ | https://github.com/rtfenter/Embeddings-Visual-Map |
 
 ---
 
-## Portfolio & Writing  
+## Portfolio & Writing
 
 - Medium: https://medium.com/@rtfenter  
 - LinkedIn: https://www.linkedin.com/in/rtfenter/  
@@ -121,6 +87,18 @@ A compact embeddings visualizer that generates embeddings for 3–6 texts and cl
 
 ---
 
-## About This Repo  
+## About This Repo
 
-This repository is the **central hub** for all AI & ML UX Systems work — writing, diagrams, prototypes, and conceptual models designed to demonstrate intelligence-system understanding to recruiters, hiring managers, and technical peers.
+This repository is the central hub for all AI & ML UX Systems work — diagrams, prototypes, and conceptual models that make model behavior, drift, retrieval, and reasoning legible through simple, interactive tools.
+
+---
+
+## Technologies Used
+
+These prototypes are intentionally lightweight:
+
+- HTML / CSS / JavaScript  
+- GitHub Pages hosting  
+- No backend required  
+
+The goal is clarity: high-signal tools that communicate AI behavior, variation, and reasoning without infrastructure overhead.
