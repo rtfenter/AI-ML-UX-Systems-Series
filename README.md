@@ -61,8 +61,8 @@ This series expresses these principles through simple, clear, interactive tools.
 ---
 
 ## Writing
-
-Essays on AI product design, explainability, retrieval, and user trust.
+Planned essays on AI product design, explainability, retrieval, and user trust.
+(These essays are not yet written — titles represent upcoming work.)
 
 - Designing Predictable AI Features  
 - Retrieval as Product Surface  
