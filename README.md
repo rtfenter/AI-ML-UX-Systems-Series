@@ -96,7 +96,7 @@ A visual playground for comparing how a single prompt produces multiple outputs 
 - Shows prompt engineering intuition  
 - Connects directly to model evaluation and UX design
 
-**Live Demo:** https://rtfenter.github.io/Prompt-Response-Variation-Explorer/ 
+**Demo:** https://rtfenter.github.io/Prompt-Response-Variation-Explorer/  
 **Repo:** https://github.com/rtfenter/Prompt-Response-Variation-Explorer
 
 ---
