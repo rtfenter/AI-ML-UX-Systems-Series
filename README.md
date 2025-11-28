@@ -1,84 +1,190 @@
-# Product Architecture Case Studies  
-### System-level analyses of real products, focused on truth, drift, and alignment
+# AI Product Systems Series  
+Practical tools for designing predictable, explainable, and user-aligned AI features
 
-This series examines real-world products through the lens of product architecture — how systems interpret signals, govern meaning, enforce boundaries, and maintain coherence under scale.
+This series collects my work on applied AI product design — where model behavior, retrieval, parameters, and UX meet practical decision-making.  
+It includes writing, diagrams, and lightweight prototypes that help teams understand how AI systems behave and how to design product surfaces around them.
 
-Each case study highlights a concrete failure mode or drift pattern in an existing product, then explores how system design, governance, or alignment improvements could stabilize behavior.
-
-These are not feature suggestions.  
-They are architecture studies.
-
-The goal: make system integrity *legible* for anyone evaluating complex products — PMs, engineers, researchers, and hiring teams.
+My goal is to make AI behavior legible for PMs, engineers, and stakeholders — turning complex model dynamics into clear, reliable, and predictable product experiences.
 
 ---
 
-## Who This Series Is For
+## Purpose of This Series
 
-These case studies are designed for interviewers, PM leaders, architects, and research teams who want to see how I analyze real system failures — not hypotheticals — and translate them into architectural insights and alignment strategies.
+Most AI failures come from misunderstanding model behavior — not weak models.
 
----
+This series makes core AI dynamics visible and product-friendly:
 
-## Case Study Structure  
+- how parameters affect outputs  
+- how variation should (and shouldn’t) behave  
+- how retrieval shapes grounding  
+- how ambiguity and drift emerge  
+- how to design UX around confidence, consistency, and explainability  
 
-Each entry follows a consistent structure:
-
-1. **Observed Behavior**  
-   A real pattern in the product that creates confusion, drift, or inconsistency.
-
-2. **Underlying System Issue**  
-   What boundary, invariant, or contract is being violated or stretched.
-
-3. **Why It Breaks**  
-   The architectural reason the system produces inconsistent or unstable outcomes.
-
-4. **Stabilizing Approach**  
-   A system-level improvement (not a feature wish).  
-   Examples: contracts, invariants, alignment rules, state transitions, governance layers.
-
-5. **Diagram or Mini-Prototype**  
-   A visual representation of the architecture, meaning drift, or signal flow.
-
-6. **Tradeoffs & Constraints**  
-   A short explanation showing awareness of engineering cost, user expectations, and product strategy.
+These prototypes are **product decision tools**, not research experiments.
 
 ---
 
-## Case Studies
+## Why This Matters for Product Strategy
 
-| Case Study | Focus | Live Demo | Repo |
-|-----------|--------|-----------|------|
-| **Anthropic — Meaning Drift in Constrained Agents** | Safety layers, input trimming, memory loss → conflicting interpretations of user intent | https://rtfenter.github.io/AI-Agent-Meaning-Drift-Case-Study/ | https://github.com/rtfenter/AI-Agent-Meaning-Drift-Case-Study |
-| **OpenAI — Retrieval Drift in Large Context Windows** | How RAG misaligns in large-input settings; need for explicit truth anchors | coming soon | coming soon |
-| **Microsoft (Copilot) — Business Logic Misinterpretation** | Domain meaning lost due to missing contracts between LLM reasoning & enterprise schemas | coming soon | coming soon |
-| **Slack — Incident Interpretation Drift** | How shared context erodes in message-driven workflows | coming soon | coming soon |
-| **Figma — Token Governance Across Multimarket Teams** | Design token drift across orgs where meaning evolves faster than governance | coming soon | coming soon |
+AI features succeed when behavior is predictable, explainable, and aligned with user intent.
 
----
+Clearer modeling and better product surfaces lead to:
 
-## Why This Series Exists  
+- safer, more consistent model responses  
+- clearer UX for variation and uncertainty  
+- better grounding from retrieval systems  
+- faster iteration with engineering  
+- improved trust and interpretability for users  
+- reduced ambiguity in product design and acceptance criteria  
 
-Modern product teams — especially in AI, platform, and distributed systems — need PMs who can:
-
-- identify signal and meaning drift  
-- map system behavior under pressure  
-- reason in contracts and invariants  
-- understand multi-service failure modes  
-- propose stabilizing architectures, not wishlists  
-
-This series makes those skills explicit and reviewable.
+These prototypes help teams reason about AI behavior early — before wiring models into complex systems.
 
 ---
 
-## About  
+## Product Architecture Philosophy
 
-This repository sits within a broader portfolio of system-level analysis and product architecture work, including:
+AI product design sits at the intersection of reasoning, UX, and system constraints.
 
-- Systems of Trust  
-- Loyalty Systems  
-- Applied Intelligence Systems  
-- Platform Systems & Internal Tools  
-- AI & ML UX Systems  
-- Recursive Identity Architecture (RIA)
+My approach is built on three principles:
 
-Full portfolio:  
-**https://github.com/rtfenter**
+### 1. Model behavior must be visible  
+Users and teams should never guess how parameters, context, or retrieval are shaping outcomes.
+
+### 2. Variation should be intentional  
+Sampling, temperature, grounding, and constraints should map directly to UX expectations.
+
+### 3. Alignment comes from clarity  
+When product surfaces reflect how models actually behave — embeddings, retrieval, variation, token influence — alignment becomes achievable.
+
+This series expresses these principles through simple, clear, interactive tools.
+
+---
+
+## Writing
+Planned essays on AI product design, explainability, retrieval, and user trust.
+(These essays are not yet written — titles represent upcoming work.)
+
+- Designing Predictable AI Features  
+- Retrieval as Product Surface  
+- The Parameter Problem: Controlling Variation  
+- Making AI Behavior Understandable for Users  
+- Explainability Without Overload  
+
+---
+
+## Projects  
+### Series Index
+
+| Prototype | Purpose | Live Demo | Repo |
+|----------|---------|-----------|------|
+| Minimal RAG Query Explorer | Embeddings → vector search → context → answer | coming soon | coming soon |
+| Chat Model Behavior Sandbox | Temperature, top-k, sampling, variation | https://rtfenter.github.io/Chat-Model-Behavior-Sandbox/ | https://github.com/rtfenter/Chat-Model-Behavior-Sandbox |
+| Model Explainer Playground (XAI Lite) | Token-level feature importance visualization | coming soon | coming soon |
+| Prompt–Response Variation Explorer | Compare multiple responses from one prompt | https://rtfenter.github.io/Prompt-Response-Variation-Explorer/ | https://github.com/rtfenter/Prompt-Response-Variation-Explorer |
+| Embeddings Visual Map (Mini Version) | 2D meaning clustering and similarity mapping | https://rtfenter.github.io/Embeddings-Visual-Map/ | https://github.com/rtfenter/Embeddings-Visual-Map |
+
+---
+
+## System Diagrams
+
+### AI Behavior Flow (Prompt → Parameters → Retrieval → Output)
+
+~~~
+            [User Prompt]
+                   |
+                   v
+           [Model Parameters]
+        - temperature
+        - top-k / top-p
+        - max tokens
+                   |
+                   v
+           [Retrieval Layer]
+        - embeddings
+        - vector search
+        - context assembly
+                   |
+                   v
+           [Model Generation]
+        - token sampling
+        - constraint shaping
+                   |
+                   v
+             [Final Output]
+~~~
+
+---
+
+### Retrieval Consistency Map
+
+~~~
+               [User Query]
+                     |
+                     v
+         [Embedding & Vector Search]
+                     |
+     ---------------------------------------
+     |                 |                   |
+     v                 v                   v
+ [Source A]       [Source B]          [Source C]
+ - updated docs   - stale content     - missing rules
+
+Result:
+- mismatched grounding
+- inconsistent answers
+- different "truths"
+- variance in outputs
+~~~
+
+---
+
+### Parameter Influence Map
+
+~~~
+       [Model Input]
+            |
+            v
+   -----------------------
+   |    Parameters       |
+   -----------------------
+   | Temperature         |
+   | Top-k / Top-p       |
+   | Max tokens          |
+   -----------------------
+            |
+            v
+     [Sampling Behavior]
+            |
+            v
+     [Output Variation]
+
+Higher temperature → more variation  
+Lower temperature → more consistency  
+Poor grounding → unpredictable drift
+~~~
+
+---
+
+## Portfolio & Writing
+
+- Medium: https://medium.com/@rtfenter  
+- LinkedIn: https://www.linkedin.com/in/rtfenter/  
+- GitHub: https://github.com/rtfenter  
+
+---
+
+## About This Repo
+
+This repository is the central hub for all AI Product Systems work — prototypes, diagrams, and conceptual models that make AI behavior understandable and usable for product teams.
+
+---
+
+## Technologies Used
+
+These prototypes are intentionally lightweight:
+
+- HTML / CSS / JavaScript  
+- GitHub Pages hosting  
+- No backend required  
+
+The goal is clarity: high-signal tools that communicate AI behavior, grounding, variation, and reasoning without infrastructure complexity.
